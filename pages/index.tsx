@@ -1,14 +1,10 @@
 import Head from 'next/head';
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import { NavItem } from '../interfaces';
 
 
 
 // Example of using an interface
-const navigationItems: NavItem[] = [
-  { label: 'Home', href: '/' },
-  { label: 'About', href: '/about' },
-  { label: 'Contact', href: '/contact' },
-];
 
 export default function Home() {
   return (
