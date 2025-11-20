@@ -1,15 +1,7 @@
 import Head from 'next/head';
 import { NavItem } from '../interfaces';
 
-// Example of using an interface
-const navigationItems: NavItem[] = [
-  { label: 'Home', href: '/' },
-  { label: 'About', href: '/about' },
-  { label: 'Contact', href: '/contact' },
-];
 
-
-import { NavItem } from '../interfaces';
 
 // Example of using an interface
 const navigationItems: NavItem[] = [
@@ -45,7 +37,7 @@ export default function Home() {
               </h1>
               <p className="text-xl text-gray-600 mb-8 leading-relaxed">
                 This is a Next.js project with TypeScript and Tailwind CSS. 
-                We're excited to have you here and can't wait to see what you'll build!
+                We&/re excited to have you here and cant wait to see what you&/ll build!
               </p>
             </section>
 
