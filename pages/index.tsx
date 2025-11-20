@@ -1,6 +1,5 @@
 import Head from 'next/head';
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-import { NavItem } from '../interfaces';
+import { NavItem } from '@/interfaces';
 
 
 
