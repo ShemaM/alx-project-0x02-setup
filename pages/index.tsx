@@ -1,5 +1,13 @@
 import Head from 'next/head';
-import Header from '../components/layout/Header';
+import { NavItem } from '../interfaces';
+
+// Example of using an interface
+const navigationItems: NavItem[] = [
+  { label: 'Home', href: '/' },
+  { label: 'About', href: '/about' },
+  { label: 'Contact', href: '/contact' },
+];
+
 
 export default function Home() {
   return (
@@ -9,10 +17,17 @@ export default function Home() {
         <meta name="description" content="Welcome to ALX Project 0x02" />
       </Head>
 
-      <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
-        <Header />
-        
-        <main className="container mx-auto px-4 py-8">
+      {/* Simple Header directly in the file */}
+      <header className="bg-white shadow-sm border-b">
+        <div className="max-w-7xl mx-auto px-4 py-4">
+          <h1 className="text-2xl font-bold text-gray-900 text-center">
+            ALX Project 0x02
+          </h1>
+        </div>
+      </header>
+
+      <main className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 py-8">
+        <div className="container mx-auto px-4">
           <div className="text-center max-w-4xl mx-auto">
             {/* Welcome Section */}
             <section className="mb-12">
@@ -21,7 +36,7 @@ export default function Home() {
               </h1>
               <p className="text-xl text-gray-600 mb-8 leading-relaxed">
                 This is a Next.js project with TypeScript and Tailwind CSS. 
-                We&apos;re excited to have you here and can&apos;t wait to see what you&apos;ll build!
+                We're excited to have you here and can't wait to see what you'll build!
               </p>
             </section>
 
@@ -47,20 +62,20 @@ export default function Home() {
               <p className="text-gray-600 mb-6">
                 Explore the project structure and start building amazing features!
               </p>
-              <button className="bg-blue-500 hover:bg-blue-600 text-white font-medium py-3 px-8 rounded-lg transition duration-200 transform hover:scale-105">
+              <button className="bg-blue-500 hover:bg-blue-600 text-white font-medium py-3 px-8 rounded-lg transition duration-200">
                 Explore Features
               </button>
             </section>
           </div>
-        </main>
+        </div>
+      </main>
 
-        {/* Footer */}
-        <footer className="bg-white border-t mt-12">
-          <div className="container mx-auto px-4 py-6 text-center text-gray-600">
-            <p>ALX Project 0x02 - Built with Next.js, TypeScript & Tailwind CSS</p>
-          </div>
-        </footer>
-      </div>
+      {/* Footer */}
+      <footer className="bg-white border-t">
+        <div className="container mx-auto px-4 py-6 text-center text-gray-600">
+          <p>ALX Project 0x02 - Built with Next.js, TypeScript & Tailwind CSS</p>
+        </div>
+      </footer>
     </div>
   );
 }
