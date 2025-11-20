@@ -33,3 +33,7 @@ export interface ContactFormData {
   email: string;
   message: string;
 }
+export interface CardProps {
+  title: string;
+  content: string;
+}
