@@ -9,6 +9,15 @@ const navigationItems: NavItem[] = [
 ];
 
 
+import { NavItem } from '../interfaces';
+
+// Example of using an interface
+const navigationItems: NavItem[] = [
+  { label: 'Home', href: '/' },
+  { label: 'About', href: '/about' },
+  { label: 'Contact', href: '/contact' },
+];
+
 export default function Home() {
   return (
     <div>
